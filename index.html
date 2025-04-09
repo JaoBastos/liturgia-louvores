@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Liturgia dos Louvores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Liturgia dos Louvores</h1>
+    <div id="form-container">
+        <h2>Adicionar Culto</h2>
+        <form id="culto-form">
+            <label>Data: <input type="date" id="data" required></label>
+            <label>Tipo: <input type="text" id="tipo" required></label>
+            <label>Tema: <input type="text" id="tema" required></label>
+
+            <label>Abrir o culto: <textarea id="abrir" placeholder="Separe com vírgulas"></textarea></label>
+            <label>Dízimos e ofertas: <textarea id="ofertas" placeholder="Separe com vírgulas"></textarea></label>
+            <label>Reflexão: <textarea id="reflexao" placeholder="Separe com vírgulas"></textarea></label>
+            <label>Fechar o culto: <textarea id="fechar" placeholder="Separe com vírgulas"></textarea></label>
+
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+
+    <div id="filtros">
+        <input type="text" id="busca" placeholder="Filtrar por louvor ou tipo...">
+    </div>
+
+    <div id="lista-cultos"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
